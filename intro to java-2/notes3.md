@@ -5,6 +5,7 @@
 # 1. JVM (Java Virtual Machine)
 
 ## What is JVM?
+
 The **Java Virtual Machine (JVM)** is an abstract runtime engine responsible for executing Java **bytecode**.  
 It provides the environment where Java programs run.
 
@@ -14,11 +15,14 @@ It is **platform-dependent** (different JVM for Windows, Linux, macOS) but **byt
 
 ## Responsibilities of JVM
 
-### 1. **Loads Code**  
+### 1. **Loads Code**
+
 ClassLoader loads `.class` files (bytecode) into memory.
 
-### 2. **Verifies Code**  
+### 2. **Verifies Code**
+
 Bytecode Verifier ensures:
+
 - No illegal memory access
 - No stack manipulation errors
 - Secure execution
@@ -26,12 +30,16 @@ Bytecode Verifier ensures:
 This provides **Java’s strong security model**.
 
 ### 3. **Executes Code**
+
 JVM uses two techniques:
-- **Interpreter** → Executes bytecode instruction-by-instruction  
+
+- **Interpreter** → Executes bytecode instruction-by-instruction
 - **JIT Compiler** → Converts hot code into machine code for high performance
 
 ### 4. **Memory Management**
+
 JVM manages memory automatically:
+
 - Heap (Objects)
 - Stack (Method calls)
 - PC Register
@@ -39,6 +47,7 @@ JVM manages memory automatically:
 - Metaspace (Class metadata)
 
 ### 5. **Garbage Collection (GC)**
+
 Reclaims memory of unused objects automatically.
 
 ---
@@ -47,15 +56,16 @@ Reclaims memory of unused objects automatically.
 
 ### JVM = Runs bytecode + Manages memory + Performs JIT + Provides portability & security.
 
-
 ---
 
 # 2. JRE (Java Runtime Environment)
 
 ## What is JRE?
+
 The **Java Runtime Environment** provides everything required to **run** a Java application, but NOT to develop one.
 
 It includes:
+
 - JVM
 - Core libraries (rt.jar / modules)
 - Supporting configuration files
@@ -65,15 +75,16 @@ It includes:
 
 ## What JRE Contains
 
-| Component | Description |
-|----------|-------------|
-| **JVM** | Executes bytecode |
-| **Java Standard Libraries** | Pre-written classes from Java API |
-| **Runtime files** | Property files, resources, security policies |
+| Component                   | Description                                  |
+| --------------------------- | -------------------------------------------- |
+| **JVM**                     | Executes bytecode                            |
+| **Java Standard Libraries** | Pre-written classes from Java API            |
+| **Runtime files**           | Property files, resources, security policies |
 
 ---
 
 ## What JRE Does NOT Contain
+
 - `javac` (Java Compiler)
 - Debuggers
 - Profilers
@@ -86,7 +97,6 @@ Thus, **you cannot develop Java programs using only JRE**.
 ## JRE Final Summary
 
 JDK = JRE + Compiler + Debugger + Development Tools
-
 
 ---
 
@@ -108,19 +118,17 @@ JDK = JRE + Compiler + Debugger + Development Tools
       │  └───────────────────────┘  │
       └─────────────────────────────┘
 
-
-
 ---
 
 # 5. Key Differences in Table Form
 
-| Feature | JVM | JRE | JDK |
-|--------|-----|-----|-----|
-| Contains Compiler? | ❌ No | ❌ No | ✔ Yes (`javac`) |
-| Can Run Java Code? | ✔ Yes | ✔ Yes | ✔ Yes |
-| Can Compile Java Code? | ❌ No | ❌ No | ✔ Yes |
-| Contains JVM? | ✔ Itself | ✔ Yes | ✔ Yes |
-| Use Case | Runs bytecode | Runs Java apps | Develop + run Java apps |
+| Feature                | JVM           | JRE            | JDK                     |
+| ---------------------- | ------------- | -------------- | ----------------------- |
+| Contains Compiler?     | ❌ No         | ❌ No          | ✔ Yes (`javac`)         |
+| Can Run Java Code?     | ✔ Yes         | ✔ Yes          | ✔ Yes                   |
+| Can Compile Java Code? | ❌ No         | ❌ No          | ✔ Yes                   |
+| Contains JVM?          | ✔ Itself      | ✔ Yes          | ✔ Yes                   |
+| Use Case               | Runs bytecode | Runs Java apps | Develop + run Java apps |
 
 ---
 
@@ -130,9 +138,8 @@ JVM executes bytecode.
 JRE provides JVM + libraries needed to run Java programs.
 JDK provides JRE + development tools needed to write and compile Java programs.
 
-
-- **JDK = JRE + javac + dev tools**  
-- **JRE = JVM + libraries**  
+- **JDK = JRE + javac + dev tools**
+- **JRE = JVM + libraries**
 - **JVM = Executes bytecode**
 
 ---

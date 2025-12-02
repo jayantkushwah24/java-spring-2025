@@ -294,9 +294,10 @@ End of File
 
 If you want, I can now **combine all previous topics** into **one single master `JavaNotes.md`** covering:
 
-- History of Java  
-- Static vs Dynamic  
-- Bytecode vs Machine Code  
-- Compiled or Interpreted  
-- JVM, JRE, JDK  
-- Java Program Structure & Core Concepts  
+- History of Java
+- Static vs Dynamic
+- Bytecode vs Machine Code
+- Compiled or Interpreted
+- JVM, JRE, JDK
+- Java Program Structure & Core Concepts
+```
