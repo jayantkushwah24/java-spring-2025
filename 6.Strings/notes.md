@@ -1,7 +1,5 @@
 # Complete In-Depth Notes on Java String, StringBuilder, StringBuffer
-(Combined + Expanded Version)
 
-This document merges **all concepts from the previous two answers** and adds additional depth expected in **FAANG-level and top product company interviews**.
 
 ---
 
@@ -50,7 +48,7 @@ The JVM depends on immutability to safely:
 ### 2.3 HashCode Caching
 `hashCode` is cached inside the object:
 
-```java
+
 private int hash; // zero until computed once
 
 If the content changed, hash-based collections would break.
