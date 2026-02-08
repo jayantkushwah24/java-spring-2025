@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/5.OOPs/5.OOPs.iml" filepath="$PROJECT_DIR$/5.OOPs/5.OOPs.iml" />
       <module fileurl="file://$PROJECT_DIR$/6.Strings/6.Strings.iml" filepath="$PROJECT_DIR$/6.Strings/6.Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.Interface_lambdaExpression_looseCoupling/7.Interface_lambdaExpression_looseCoupling.iml" filepath="$PROJECT_DIR$/7.Interface_lambdaExpression_looseCoupling/7.Interface_lambdaExpression_looseCoupling.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exception Handling/Exception Handling.iml" filepath="$PROJECT_DIR$/Exception Handling/Exception Handling.iml" />
       <module fileurl="file://$PROJECT_DIR$/java spring 2025.iml" filepath="$PROJECT_DIR$/java spring 2025.iml" />
     </modules>
